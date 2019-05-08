@@ -35,13 +35,6 @@ for index in range(len(S)-2,-1,-1):
                           (1 - p) * numpy.exp(-r * dt) * calls[len(calls) - 1][index1 + 1]
                           for index1 in range(len(S[index + 1]) - 1)])))
 
-print('Stock Price at t=' + str(t))
-print(S[t])
-print('\n Call Option Prices at t=' + str(t))
-print(calls[len(calls)-t-1])
-print('\n Put Option Prices at t=' + str(t))
-print(puts[len(puts)-t-1])
-
 paths = [[S[0][0]]]
 for index in range(1,len(S)-1):
     paths = paths + copy.deepcopy(paths)
