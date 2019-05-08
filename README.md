@@ -3,7 +3,7 @@ Binomial option pricing model in Python for American Options.
 
 Code generates the stock / option price lattice for american options based on an underlying instrument.
 
-Parameters:
+Parameters:<br>
 mu = mean
 sigma = volatility
 T = total time to simulate option prices until
